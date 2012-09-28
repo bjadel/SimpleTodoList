@@ -2,9 +2,74 @@
 	Put anything you reference with "url()" in ../assets/
 	This way, you can minify your application, and just remove the "source" folder for production
 */
+
 #app {
-	margin: 16px;
-	border-radius: 4px;
-	background-color: silver;
-	padding: 16px;
+	
 }
+
+.app > * {
+	box-shadow: -4px -4px 4px rgba(0,0,0,0.3);
+	background: #555;
+	width: 320px;		
+}
+
+.left {
+	color: white;
+}
+
+.item {
+	position: relative;
+	border-bottom: 1px solid #0E0E0E;
+	padding: 16px 12px;
+	background-color: #333333;
+}
+
+.item.onyx-selected {
+	background-color: #226B9A;
+}
+
+.panels {
+	min-height: 320px;
+	min-width: 320px;
+}
+
+.panels > * {
+	border: 2px solid #333;
+	font-size: 5em;
+	text-align: center;
+}
+
+.wide > * {
+	min-width: 50%;
+}
+
+.collapsible > * {
+	min-width: 250px;
+}
+
+#app_title {
+	font: normal normal normal 24px/26px Courgette, Purisa, Helvetica, Arial, sans-serif;
+}
+
+#app_todoList_image {
+	margin-right: 15px;
+}
+
+.display-todo-entry-content, .edit-todo-entry-content {
+	padding: 15px;
+	margin: 15px;
+}
+
+.edit-input-label {
+	color: #FFF;
+	padding-top: 12px;
+}
+
+.display-todo-entry-content h1 {
+	color: #FFF;
+}
+
+.display-todo-entry-content p {
+	color: #FFF;
+}
+

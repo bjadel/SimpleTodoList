@@ -2,5 +2,11 @@ enyo.depends(
 	"$lib/layout",
 	"$lib/onyx",
 	"App.css",
-	"App.js"
+	"App.js",
+	"DisplayTodoEntry.js",
+	"EditTodoEntry.js",
+	"CreateTodoEntry.js",
+	"TodoList.js",
+	"TodoListModel.js",
+	"TodoListDAO.js"
 );
