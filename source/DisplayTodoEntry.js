@@ -10,10 +10,10 @@ enyo.kind({
 	},
 	components: [
 		{kind: "Scroller", horizontal:"hidden", fit: true, touch: true, classes: "scroller-sample-scroller enyo-fit", components: [
-            {kind: "FittableColumns", components: [
-                {kind:"onyx.Button", content: "Bearbeiten", ontap:"editTodoEntry"},
-                {kind:"onyx.Button", content: "Löschen", ontap:"deleteTodoEntry"}
-            ]},
+			{kind: "FittableColumns", components: [
+				{kind:"onyx.Button", content: "Bearbeiten", classes: "onyx-affirmative", ontap:"editTodoEntry"},
+				{kind:"onyx.Button", content: "Löschen", classes: "onyx-negative", ontap:"deleteTodoEntry"}
+			]},
 			{name: "displayTodoEntryContent", 
 				classes: "display-todo-entry-content", 
 				kind: "FittableRows", 

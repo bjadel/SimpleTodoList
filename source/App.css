@@ -73,3 +73,15 @@
 	color: #FFF;
 }
 
+.onyx-button {
+	margin-left: 15px;
+}
+
+.enyo-list-port {
+	background: url(../assets/bg.png);
+}
+
+.display-todo-entry-content {
+	background-color: #444;
+}
+

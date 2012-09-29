@@ -11,8 +11,8 @@ enyo.kind({
 				{name: "title", content: "Todo Liste"}
 			]},
 			{kind: "FittableColumns", components: [
-				{kind:"onyx.Button", content: "Hinzufügen", ontap:"addTodoEntry"},
-				{kind:"onyx.Button", content: "Alle löschen", ontap:"deleteAllTodoEntries"}
+				{kind:"onyx.Button", content: "Hinzufügen", classes: "onyx-affirmative", ontap:"addTodoEntry"},
+				{kind:"onyx.Button", content: "Alle löschen", classes: "onyx-negative", ontap:"deleteAllTodoEntries"}
 			]},
 			{kind: "TodoList", name: "todoList", onSelect: "todoEntrySelected", fit: true}
 		]},

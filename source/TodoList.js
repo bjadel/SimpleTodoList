@@ -7,20 +7,18 @@ enyo.kind({
 		onSelect: ""
 	},
 	components: [
-		{kind: "List", fit: true, touch: true, onSetupItem: "setupItem", 
-			components:	[
-				{name: "item", classes: "item", ontap: "itemTap", components: [
-					{name: "index", classes: "list-sample-index"},
-					{kind: "FittableRows", components: [
-					    {kind: "FittableColumns", components: [
-	                        {kind: "Image", src: "assets/listicon.png"},
-	                        {name: "todoEntryTitle", tag: "h4"}
-                        ]},
-						{name: "todoEntryDescription", tag: "p"}
-					]}
+		{kind: "List", fit: true, touch: true, onSetupItem: "setupItem", components: [
+			{name: "item", classes: "item", ontap: "itemTap", components: [
+				{name: "index", classes: "list-sample-index"},
+				{kind: "FittableRows", components: [
+					{kind: "FittableColumns", components: [
+						{kind: "Image", src: "assets/listicon.png"},
+						{name: "todoEntryTitle", tag: "h4"}
+					]},
+					{name: "todoEntryDescription", tag: "p"}
 				]}
-			]
-		}
+			]}
+		]}
 	],
 	create: function() {
 		this.inherited(arguments);
